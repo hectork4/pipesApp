@@ -1,0 +1,29 @@
+<p-panel [showHeader]="false" class="p-1" header="Pipes numéricos">
+    
+    <p>
+        Pipes incluidos en Angular - Usualmente se usan en el template
+    </p>
+</p-panel>
+
+<div class="grid mt-2">
+    <div class="col-12 md:col-6">
+        <p-card header="Ventas Netas" subheader="subheader">
+            <h1>Uppercase</h1>
+            <p>{{ totalSells + 1235 | number:'1.2-2' }}</p>
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="Ventas Brutas" subheader="subheader">
+            <h1>Uppercase</h1>
+            <p>{{ totalSells | currency:'USD':'symbol-narrow':'1.4-4' }}</p>
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6">
+        <p-card header="Ganancia porcentual" subheader="subheader">
+            <h1>Uppercase</h1>
+            <p>{{ percent | percent: '1.2-2' }}</p>
+        </p-card>
+    </div>
+</div>
